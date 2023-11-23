@@ -6,8 +6,10 @@ const app = express();
 
 //Conectamos la BD
 conectarDB();
+app.use(express.json());
 app.use('/api/productos', require('./routes/producto'));
 
+//app.use('/api/productos', require('./routes/producto'));
 //Ruta Pcipal
 //app.get('/', (req, res)=>{
   //  res.send('Hola Gono');
