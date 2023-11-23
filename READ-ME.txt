@@ -1,0 +1,8 @@
+Mongo DB
+
+User: krontroth
+Psw: 13eSlzYhpbncDIfR
+
+Ruta std: mongodb+srv://krontroth:<password>@cluster0.r79rn7k.mongodb.net/
+
+Cadena Mongo: mongodb+srv://krontroth:13eSlzYhpbncDIfR@cluster0.r79rn7k.mongodb.net/
