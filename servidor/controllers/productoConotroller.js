@@ -45,3 +45,32 @@ exports.actualizarProducto = async (req,res)=> {
         res.status(500).send('Hubo un error')
     }
 }
+
+exports.obtenerProducto = async (req,res)=> {
+    try {
+        let producto = await Producto.findById(req.params.id);
+        if(!producto){
+            res.status(400).json({msg: 'No existe el producto!'});
+        }
+        res. json(producto); 
+         
+    }catch (error) {
+        console.log(error);
+        res.status(500).send('Hubo un error')
+    }
+}
+
+exports.eliminarProducto = async (req,res)=> {
+    try {
+        let producto = await Producto.findById(req.params.id);
+
+        if(!producto){
+            res.status(404).json({msg: 'No existe el producto!'});
+        }
+        await Producto.findOneAndDelete({ _id: req.params.id })
+        res. json({msg: 'Producto eliminado con exito'}); 
+    } catch (error) {
+        console.log(error);
+        res.status(500).send('Hubo un error')
+    }
+}
