@@ -17,35 +17,18 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr *ngFor="let producto of listProductos">
                             <th scope="row">1</th>
-                            <td>Coca Cola</td>
-                            <td>Bebida</td>
-                            <td>Buenos Aires</td>
-                            <td>5</td>
-                            <td><i class="text-primary fa-solid fa-pen-to-square"></i></td>
-                            <td><i class="text-danger fa-solid fa-trash"></i></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Sprite</td>
-                            <td>Bebida</td>
-                            <td>Cali</td>
-                            <td>7</td>
-                            <td><i class="text-primary fa-solid fa-pen-to-square"></i></td>
-                            <td><i class="text-danger fa-solid fa-trash"></i></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Pepsi</td>
-                            <td>Bebida</td>
-                            <td>Lima</td>
-                            <td>6</td>
+                            <td>{{producto.nombre}}</td>
+                            <td>{{producto.categoria}}</td>
+                            <td>{{producto.ubicacion}}</td>
+                            <td>{{producto.precio | currency}}</td>
                             <td><i class="text-primary fa-solid fa-pen-to-square"></i></td>
                             <td><i class="text-danger fa-solid fa-trash"></i></td>
                           </tr>
                         </tbody>
                       </table>
+                      <h5 *ngIf="listProductos.length == 0" style="text-align: start; margin-top: 10px">No hay productos para mostrar!</h5>
                 </div>
             </div>
         </div>
