@@ -24,7 +24,7 @@
                             <td>{{producto.ubicacion}}</td>
                             <td>{{producto.precio | currency}}</td>
                             <td><i class="text-primary fa-solid fa-pen-to-square"></i></td>
-                            <td><i class="text-danger fa-solid fa-trash"></i></td>
+                            <td><i (click)="eliminarProducto(producto._id)" class="text-danger fa-solid fa-trash"></i></td>
                           </tr>
                         </tbody>
                       </table>
