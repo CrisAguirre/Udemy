@@ -5,3 +5,5 @@ Comandos de ejecución:
 -npm run dev (servidor node)
 
 Requisito: Disponer conexión a BD mongo llamada "meanproductos"
+
+Nota: Se adjunta archivo .json con todas las consultas desde postman

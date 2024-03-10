@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "37f6f9d7-7177-45be-a806-d5007dfa50f4",
+		"name": "CRUD ANGULAR MONGO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18057743"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/api/productos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:4000/api/productos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/productos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Fanta\",\r\n    \"categoria\":\"Bebidas\",\r\n    \"ubicacion\":\"Fritzland\",\r\n    \"precio\":\"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/productos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/api/productos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/productos/655e9daac0d896906d724163",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"church\",\r\n    \"categoria\":\"Bebidas\",\r\n    \"ubicacion\":\"Fritzlandy\",\r\n    \"precio\":\"7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/productos/655e9daac0d896906d724163"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/productos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/api/productos/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/productos/655e9daac0d896906d724163",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:4000/api/productos/655e9daac0d896906d724163"
+			},
+			"response": []
+		}
+	]
+}
